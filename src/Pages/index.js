@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context/Context';
 import { EmployeeList } from '../Components/EmployeeList/EmployeeList';
-import Paginate from '../Components/Pagination/Pagination'
-import Loading from '../Components/Layout/Loading'
-import Header from '../Components/Layout/Header'
+import Paginate from '../Components/Pagination/Pagination';
+import Loading from '../Components/Layout/Loading';
+import Footer from '../Components/Layout/Footer';
 
 export const Employees = () => {
     const { loading } = useContext(Context)
@@ -15,11 +15,11 @@ export const Employees = () => {
 
     return (
         <>
-            <Header />
+            <Paginate />
             <div className="card-container">
                 <EmployeeList />
             </div>
-            <Paginate />
+            <Footer />
         </>
     )
 }

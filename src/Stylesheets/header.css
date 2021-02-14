@@ -1,18 +1,30 @@
 .header-title {
     text-align: center;
-    margin: 1rem 0 0 0;
+    margin: 1rem auto;
     font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 90%;
 }
 
 .header-subtitle {
     text-align: center;
-    margin: 2rem 0 0 0;
-    font-size: 2rem;    
+    margin: 2rem 0;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;    
 }
 
+@media screen and (max-width: 700px) {
+    .header-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+} 
+
 .underline {
-    width: 8rem;
-    height: 0.25rem;
-    background: var(--clr-white);
+    width: 100%;
+    display: grid;
     margin: 0 auto;
+    height: 0.25rem;
+    background: var(--clr-white); 
 }

@@ -1,14 +1,12 @@
 import React from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import '../../Stylesheets/loading.css';
 
-const Loading = () => {
-  return (
-    <>
-      <div>
-        <p className="loading">Loading</p>
-      </div>
-    </>
-  );
-};
+export default function CircularIndeterminate() {
 
-export default Loading;
+  return (
+    <div className="loading">
+      <CircularProgress color="inherit"/>
+    </div>
+  );
+}

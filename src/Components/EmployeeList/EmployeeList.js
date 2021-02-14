@@ -14,6 +14,10 @@ export const EmployeeList = () => {
 
     // loop through the sliced data and display filtered employee cards
     return currentProfiles.map((employee, index) => {
-        return <EmployeeCard key={index} {...employee} />
+        return (
+            <div>
+                <EmployeeCard key={index} {...employee} />
+            </div>    
+        )
     });
 };

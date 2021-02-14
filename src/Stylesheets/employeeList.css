@@ -2,7 +2,7 @@
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
-  padding: 2rem 3.5rem;
+  padding: 2rem 2rem;
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -22,36 +22,56 @@
   transform: rotateY(-180deg);
 }
 
-@media screen and (min-width: 576px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-}
-
 .card img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.75rem;
+  margin: 1rem;
 }
 
-.card h4 {
-  margin-bottom: 1.5rem;
-  font-size: 0.85rem;
+.card h1 {
+  color: var(--clr-grey-2);
+  letter-spacing: 0.1rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size: 11px;
+  letter-spacing: 1px;
   color: var(--clr-grey-2);
 }
 
 .card-container {
   display: grid;
-  gap: 2rem;
-  margin: 5rem 10rem;
-  height: 10%;
+  gap: 1.5rem;
+  margin: 2rem 10rem 5rem 10rem;
 }
 
+@media screen and (max-width: 700px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    margin: 0 auto;
+    padding: 5% 15%;
+  }
+} 
+
+@media screen and (min-width: 576px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+} 
+
+@media screen and (min-width: 1600px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+} 
+
+@media screen and (min-width: 1900px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}  

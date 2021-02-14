@@ -13,14 +13,18 @@ const EmployeeCard = ({ picture, name, email }) => {
         <div 
             onMouseEnter={(e, value) => {flip(e.target)}}
             onMouseLeave={(e, value) => {flip(e.target)}}
+            data-aos="zoom-in" 
+            data-aos-delay="300"
+            data-aos-duration="2500"
+            
         >
             <div 
                 className={toggleClass ? 'card is-flipped' : 'card'}
             >
                 <div className="card__face card__face--front">
                     <article>
-                        <img src={picture.large} />
-                        <h4>{email}</h4>
+                        <img src={picture.large} alt="Employee Card"/>
+                        <p>{email}</p>
                         <h1>{name.first}</h1>
                     </article> 
                 </div>

@@ -18,6 +18,9 @@ const Paginate = () => {
             onChange={(event, val) => {updateActivePage(val)}}
             count={pageCount}
             page={activePage} 
+            data-aos="fade-up"
+            data-aos-delay="500" 
+            data-aos-duration="3000"
         />
     );
 };
