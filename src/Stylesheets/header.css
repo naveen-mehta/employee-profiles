@@ -11,18 +11,20 @@
     text-align: center;
     margin: 2rem 0;
     font-size: 2rem;
-    letter-spacing: 0.1rem;    
+    letter-spacing: 0.1rem;  
+    width: 99%; 
 }
 
 @media screen and (max-width: 700px) {
     .header-subtitle {
         font-size: 1rem;
         margin-bottom: 0;
+        height: 50px;
     }
 } 
 
 .underline {
-    width: 100%;
+    width: 99%;
     display: grid;
     margin: 0 auto;
     height: 0.25rem;

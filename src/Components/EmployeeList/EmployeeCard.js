@@ -16,7 +16,8 @@ const EmployeeCard = ({ picture, name, email, location, dob, id }) => {
             onMouseLeave={(e, value) => {flip(e.target)}}
             data-aos="zoom-in" 
             data-aos-delay="300"
-            data-aos-duration="2500"   
+            data-aos-duration="2500"
+            className="card-wrapper"   
         >
             <div 
                 className={toggleClass ? 'card is-flipped' : 'card'}
