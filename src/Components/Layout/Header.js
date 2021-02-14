@@ -19,9 +19,9 @@ const Header = () => {
                 data-aos-duration="1500" 
             >
                 <Typed
-                    strings={['Hi there :)', 'My name is Naveen Mehta.', `I'm a Software Engineer based in Melbourne.`, 'Hover on the cards below to see more...', 'Thanks for stopping by!']}
-                    typeSpeed={40}
-                    backSpeed={40}
+                    strings={['Hi there :-)', 'My name is Naveen Mehta.', `I'm a Software Engineer based in Melbourne.`, 'Hover on the cards below to see more...', 'Thanks for stopping by :)']}
+                    typeSpeed={41}
+                    backSpeed={45}
                     loop
                 >
                 </Typed>

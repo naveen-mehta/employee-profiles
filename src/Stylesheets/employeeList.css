@@ -2,7 +2,7 @@
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
-  padding: 2rem 2rem;
+  padding: 0.8rem 0.5rem;
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -20,6 +20,10 @@
 
 .card__face--back {
   transform: rotateY(-180deg);
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 100%;
 }
 
 .card img {
@@ -33,10 +37,11 @@
 .card h1 {
   color: var(--clr-grey-2);
   letter-spacing: 0.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .card p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   font-size: 11px;
   letter-spacing: 1px;
   color: var(--clr-grey-2);
