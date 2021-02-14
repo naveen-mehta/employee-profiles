@@ -1,0 +1,18 @@
+.header-title {
+    text-align: center;
+    margin: 1rem 0 0 0;
+    font-size: 3rem;
+}
+
+.header-subtitle {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    font-size: 2rem;    
+}
+
+.underline {
+    width: 8rem;
+    height: 0.25rem;
+    background: var(--clr-white);
+    margin: 0 auto;
+}

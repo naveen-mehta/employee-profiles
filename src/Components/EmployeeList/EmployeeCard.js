@@ -3,7 +3,6 @@ import '../../Stylesheets/employeeList.css';
 import { useState } from 'react';
 
 const EmployeeCard = ({ picture, name, email }) => {
-    
     const[toggleClass, setToggleClass] = useState(false);
     
     const flip = (e) => {

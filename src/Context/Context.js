@@ -15,7 +15,7 @@ export const Provider = ({ children }) => {
     const [activePage, setActivePage] = useState(1);
 
     // profiles per page
-    const [profilesPerPage, setProfilesPerPage] = useState(8);
+    const [profilesPerPage, setProfilesPerPage] = useState(4);
 
     // fetch data using helper function
     useEffect(() => {
