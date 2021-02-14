@@ -1,6 +1,11 @@
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Employees } from './Pages'
+
 function App() {
   return (
-    <h1>Employee Profiles</h1>
+    <Router>
+      <Route exact path='/' component={Employees}/>
+    </Router>
   );
 }
 

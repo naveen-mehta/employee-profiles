@@ -11,13 +11,19 @@ export const Provider = ({ children }) => {
     // employee data from API 
     const [empData, setEmpData] = useState([]); 
 
+    // pagination
+    const [activePage, setActivePage] = useState(1);
+
+    // profiles per page
+    const [profilesPerPage, setProfilesPerPage] = useState(8);
+
     // fetch data using helper function
     useEffect(() => {
         (async () => {
             const [_empData] = await Promise.all([
                 fetchEmployeeData() 
             ]);
-                setEmpData(_empData);
+            setEmpData(_empData);
             setLoading(false);
         })();    
     }, []);
@@ -26,7 +32,11 @@ export const Provider = ({ children }) => {
         <Context.Provider
             value={{
                 loading,
-                empData          
+                empData,
+                activePage,
+                setActivePage,
+                profilesPerPage,
+                setProfilesPerPage,          
             }}    
         >
             {children}

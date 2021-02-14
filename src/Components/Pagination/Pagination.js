@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Pagination from '@material-ui/lab/Pagination';
-import { Context } from '../../Context/Context'
+import { Context } from '../../Context/Context';
+import '../../Stylesheets/pagination.css';
 
 const Paginate = () => {
     const { empData, profilesPerPage, activePage, setActivePage } = useContext(Context);
@@ -12,7 +13,8 @@ const Paginate = () => {
     const updateActivePage = (pageNum) => setActivePage(pageNum);
 
     return (
-        <Pagination 
+        <Pagination
+            className='pagination' 
             onChange={(event, val) => {updateActivePage(val)}}
             count={pageCount}
             page={activePage} 

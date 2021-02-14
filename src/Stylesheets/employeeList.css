@@ -1,0 +1,50 @@
+.card {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  padding: 2rem 3.5rem;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Card flip */
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  transform: rotateY(-180deg);
+}
+
+@media screen and (min-width: 576px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.card h4 {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--clr-grey-5);
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  margin: 5rem 10rem;
+}
+
