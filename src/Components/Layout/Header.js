@@ -7,7 +7,7 @@ const Header = () => {
             <h1 
                 className="header-title"
                 data-aos="fade-down" 
-                data-aos-duration="1000"
+                data-aos-duration="2000"
             >
                 Sandpit Team
             </h1>

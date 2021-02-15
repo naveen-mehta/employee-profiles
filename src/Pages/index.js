@@ -4,6 +4,7 @@ import { EmployeeList } from '../Components/EmployeeList/EmployeeList';
 import Paginate from '../Components/Pagination/Pagination';
 import Loading from '../Components/Layout/Loading';
 import Footer from '../Components/Layout/Footer';
+import Filter from '../Components/Layout/Filter';
 
 export const Employees = () => {
     const { loading } = useContext(Context)
@@ -15,6 +16,7 @@ export const Employees = () => {
 
     return (
         <>
+            <Filter />
             <Paginate />
             <div className="card-container">
                 <EmployeeList />

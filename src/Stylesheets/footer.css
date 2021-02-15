@@ -1,10 +1,16 @@
 .footer {
     text-align: center;
-    padding: 1rem;
+    padding: -1rem;
     width: 90vw;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
     text-align: center;
     margin: 0 auto 2% auto;
-  }
-  
+    animation-name: fade-in-out;
+    animation-duration: 4s;  
+}
+
+@keyframes fade-in-out {
+  from {opacity: 0}
+  to {opacity: 1}
+}

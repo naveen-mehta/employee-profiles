@@ -1,0 +1,30 @@
+ul.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: fade-in-out;
+    animation-duration: 4s;  
+}
+
+ul.filter li {
+    font-size: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    list-style: none;
+    border-right: 1.5px solid var(--clr-primary-3); 
+}
+
+ul.filter li.active {
+    background: var(--clr-primary-2);
+    box-shadow: var(--dark-shadow);
+    color: var(--clr-primary-1);
+}
+
+ul.filter li:last-child {
+    border-right: none;
+}
+
+@keyframes fade-in-out {
+    from {opacity: 0}
+    to {opacity: 1}
+}

@@ -1,3 +1,15 @@
+/* outer container for all cards */
+.card-container {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 10rem 5rem 10rem;
+}
+
+/* container for individual cards */
+.card-wrapper {
+  margin-bottom: 10px;
+}
+
 .card {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -47,16 +59,9 @@
   color: var(--clr-grey-2);
 }
 
-/* outer container for all cards */
-.card-container {
-  display: grid;
-  gap: 1.5rem;
-  margin: 2rem 10rem 5rem 10rem;
-}
-
-/* container for individual cards */
-.card-wrapper {
-  margin-bottom: 10px;
+@keyframes fade-in-out {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 @media screen and (max-width: 700px) {

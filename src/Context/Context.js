@@ -17,6 +17,9 @@ export const Provider = ({ children }) => {
     // profiles per page
     const [profilesPerPage, setProfilesPerPage] = useState(4);
 
+    // filter by gender
+    const [filter, setFilter] = useState('');
+
     // fetch data using helper function
     useEffect(() => {
         (async () => {
@@ -36,7 +39,9 @@ export const Provider = ({ children }) => {
                 activePage,
                 setActivePage,
                 profilesPerPage,
-                setProfilesPerPage,          
+                setProfilesPerPage,   
+                filter,
+                setFilter,       
             }}    
         >
             {children}

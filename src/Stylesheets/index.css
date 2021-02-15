@@ -6,7 +6,6 @@
 }
 
 :root {
-
     --clr-primary-1: hsl(169, 23%, 36%);
     --clr-primary-2: hsl(180, 64%, 94%);
     --clr-primary-3: hsl(180, 30%, 16%);    
@@ -30,4 +29,5 @@
     line-height: 1.5;
     font-size: 1rem;
     max-width: 99vw;
+    margin: 0 auto;
 }

@@ -5,3 +5,10 @@
     width: 99%;
     text-align: center;
 }
+
+@media screen and (max-width: 375px) {
+    .MuiPaginationItem {
+      margin: 0;
+      padding: 0;
+    }
+} 
