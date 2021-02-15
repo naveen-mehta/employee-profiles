@@ -26,7 +26,7 @@ Both applications can be viewed below:
 **PHP Backend(API):** [Employee Profiles API](https://desolate-wave-40952.herokuapp.com/api/userinfo) / [github](https://github.com/naveen-mehta/employee-profiles-api)
 
 ---
-## Technologies used
+### Technologies used
 - ReactJS
 - PHP (backend API)
 - Laravel framework (backend)
@@ -42,20 +42,20 @@ Both applications can be viewed below:
 - Netlify (frontend deployment)
 
 ---
-## Mobile responsiveness
+### Mobile responsiveness
 - This app is optimized for different screen sizes and was tested using the chrome emulator 
 
 ---
-## Helper methods
+### Helper methods
 -  Data is normalised using some helper functions
 -  Employee records are retrieved using AJAX   
 
 ---
-## State management
+### State management
 -  Context API was used for state management and updating props centrally
 
 ---
-## Improvements and assumptions
+### Improvements and assumptions
 - Pagination: as a part of this exercise, the API route was designed to send back all employee records without a limiter. This approach works fine for 2000 records as shown here but as the data grows, a more scalable approach would be to add a limit parameter with a start and size property to throttle requests coming from the client side
 - Since the task mentioned that any data can be used for this exercise, the filtering was done by slicing data on the frontend based on gender instead of employee department. Another approach would be to add a new route in the backend that serves a subset of information to filter data on the client side
 
