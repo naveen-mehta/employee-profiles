@@ -1,5 +1,5 @@
-# Employee Profiles - Sandpit 
-(/public/sandpit-banner.png)
+# Employee Profiles  
+![Sandpit](/public/sandpit-banner.png)
 
 ---
 ### Table of Contents
