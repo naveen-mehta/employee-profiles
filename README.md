@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Employee Profiles - Sandpit 
+(/public/sandpit-banner.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+### Table of Contents
+  - [Introduction](#introduction)
+  - [Demo](#demo)
+  - [Technologies used](#technologies-used)
+  - [Mobile responsiveness](#mobile-responsiveness)
+  - [Helper methods](#helper-methods)
+  - [State management](#state-management)
+  - [Improvements & assumptions](#improvements-and-assumptions)
 
-## Available Scripts
+---
+### Introduction
+This app was built using ReactJS and retrieves 2000 employee records from a backend API built in PHP. The PHP API was built as a part of this project. The Laravel framework was used for the backend server. 
 
-In the project directory, you can run:
+Each employee profile is an object derived from a class using mock data stored on the server. Data is searched asynchronously from the API using fetch. Data can be filtered on the frontend based on gender without a page refresh. Employee cards flip on hover to show extra employee information.  
 
-### `yarn start`
+---
+### Demo: 
+Both applications can be viewed below:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**React Frontend:** [Employee Profiles App](https://sandpit-team.netlify.app/) / [github](https://github.com/naveen-mehta/employee-profiles)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**PHP Backend(API):** [Employee Profiles API](https://desolate-wave-40952.herokuapp.com/api/userinfo) / [github](https://github.com/naveen-mehta/employee-profiles-api)
 
-### `yarn test`
+---
+## Technologies used
+- ReactJS
+- PHP (backend API)
+- Laravel framework (backend)
+- Javascript
+- HTML
+- CSS
+- React Context API
+- React Hooks
+- MaterialUI
+- React typed
+- AOS
+- Heroku (backend deployment)
+- Netlify (frontend deployment)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+## Mobile responsiveness
+- This app is optimized for different screen sizes and was tested using the chrome emulator 
 
-### `yarn build`
+---
+## Helper methods
+-  Data is normalised using some helper functions
+-  Employee records are retrieved using AJAX   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+## State management
+-  Context API was used for state management and updating props centrally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+## Improvements and assumptions
+- Pagination: as a part of this exercise, the API route was designed to send back all employee records without a limiter. This approach works fine for 2000 records as shown here but as the data grows, a more scalable approach would be to add a limit parameter with a start and size property to throttle requests coming from the client side
+- Since the task mentioned that any data can be used for this exercise, the filtering was done by slicing data on the frontend based on gender instead of employee department. Another approach would be to add a new route in the backend that serves a subset of information to filter data on the client side
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
